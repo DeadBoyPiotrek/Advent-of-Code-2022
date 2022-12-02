@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon day1/index.ts"
+    "nodemon": "nodemon",
+    "nodemon2": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@types/node": "^18.11.10",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
   }
