@@ -1,4 +1,3 @@
-//! start: 12:40 12/01/2022
 console.log('Hello World');
 
 const a = `
@@ -2297,21 +2296,3 @@ console.log(`🚀 ~ eArr`, eArr);
 
 const sum = eArr.reduce((a, b) => a + b);
 console.log(`🚀 ~ sum`, sum);
-
-//! end 14:08 01/12/2022
-
-//! with enormous help from github copilot
-
-export const calculateTime = (start: string, end: string): number => {
-  const startArr = start.split(':');
-  const endArr = end.split(':');
-  const startHours = parseInt(startArr[0]);
-  const startMinutes = parseInt(startArr[1]);
-  const endHours = parseInt(endArr[0]);
-  const endMinutes = parseInt(endArr[1]);
-  const totalMinutes =
-    (endHours - startHours) * 60 + (endMinutes - startMinutes);
-  return totalMinutes;
-};
-console.log(calculateTime('12:40', '14:08'));
-//! time taken: 88 minutes
